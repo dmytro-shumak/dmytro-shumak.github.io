@@ -10,3 +10,10 @@ closeMenu.addEventListener('click', () =>{
     menu.classList.remove('active');
 });
 
+const percents = document.querySelectorAll('.percent'),
+    lines = document.querySelectorAll('.range__filled');
+
+percents.forEach((item, i) =>{
+    lines[i].style.width = item.innerHTML;
+});
+
